@@ -48,6 +48,12 @@ public class Main {
 		}
 	}
 
+	/**
+	 * This function is to pad decorators to the left of a string
+	 * For example:
+	 * 		padLeft("4321", "0", 5) >> "01234"
+	 * 		padLeft("321", "0" , 5) >> "00321"
+	 */
 	public static String padLeft(String target, String decorator, int length) {
 		if(target.length() - length == 0) {
 			return target;
